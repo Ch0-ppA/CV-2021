@@ -95,3 +95,38 @@ dd{
     color: lightslategray; 
 }
 
+.tabs>input{
+    display: none;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tabs>label{
+    text-transform: uppercase;
+    color: rgb(0, 81, 255);
+    font-weight: 900;
+    font-size: 2vw;
+    text-shadow: gray 2px 2px 1px; 
+    cursor: pointer;
+}
+
+.tab-section{
+    display: none;
+}
+
+.tab-section:first-of-type{
+    display: block;
+}
+
+.tabs>input:checked + label {
+    color: #000000a2;
+    border: 1px solid #C0C0C0;
+    border-bottom: 1px solid #FFFFFF;
+    border-radius: 7%;
+    background: lavenderblush;
+    padding: 0 3px;
+}
+

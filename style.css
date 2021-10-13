@@ -24,7 +24,7 @@ a{
 }
 
 .block-back{
-    background-color: lavenderblush;
+    background: lavenderblush;
     box-shadow: 2px 2px 1px grey;
     border-radius: 5px;
 }
@@ -34,7 +34,7 @@ h2{
     color: rgb(0, 81, 255);
     font-weight: 900;
     font-size: 4vw;
-    text-shadow: gray 2px 2px 1px;
+    text-shadow: gray 2px 3px 1px;
 }
 
 .top{
@@ -57,7 +57,7 @@ h2{
 .profession{
     font-size: 2vw;
     color: lightslategray;
-    text-align: center;
+    text-align: right;
     margin-bottom: 10px;
 }
 
@@ -132,4 +132,78 @@ dd{
 
 .tab-section>h2{
     text-align:center;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-skills{
+    flex-grow: 2;
+}
+
+.prof-skills{
+    flex-grow: 1;
+    margin-right: 5%;
+    padding-left:2%;
+    padding-bottom: 1%;
+}
+
+.skills h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4vw;
+    color: white;
+    line-height: 2em;
+}
+
+.h3-back{
+    background: rgb(0, 81, 255);
+    width: fit-content;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 0 auto;
+    margin-top: -1vh;
+    
+   
+}
+
+.tab-section>h2{
+    margin-bottom: 2%;
+}
+
+.p-bar-container{
+    background-color: lightgray;
+    width: 95%;
+}
+
+.p-bar{
+    background: rgb(0, 81, 255);
+    width: 0;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 700;
+}
+
+.skills p{
+    font-size: 1.5vw;
+    color: black;
+    font-weight: 900;
+}
+
+#html{
+    width: 85%;
+}
+#css{
+    width: 80%;
+}
+#js{
+    width: 65%;
+}
+#react{
+    width: 35%;
+}
+#webpack{
+    width: 30%;
 }

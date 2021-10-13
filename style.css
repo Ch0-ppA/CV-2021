@@ -113,6 +113,12 @@ dd{
     cursor: pointer;
 }
 
+.tabs>label:hover{
+    color: lavenderblush;
+    text-shadow:gray 1px 1px 2px;
+    transition: 0.3s ease-in-out;
+}
+
 .tab-section{
     display: none;
 }

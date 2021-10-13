@@ -122,11 +122,14 @@ dd{
 }
 
 .tabs>input:checked + label {
-    color: #000000a2;
-    border: 1px solid #C0C0C0;
+    color: lavenderblush;
+    border: 2px solid gray;
     border-bottom: 1px solid #FFFFFF;
     border-radius: 7%;
     background: lavenderblush;
     padding: 0 3px;
 }
 
+.tab-section>h2{
+    text-align:center;
+}

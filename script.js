@@ -14,3 +14,4 @@ function showTab() {
     }
     document.getElementById('sect_'+tabNumber).style.display='block';
 }
+

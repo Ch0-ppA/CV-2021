@@ -14,7 +14,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 .wrapper{
     min-width: 360px;
-    margin: 20px auto;
+    margin: 5% auto;
     width: 80%;
 }
 
@@ -46,12 +46,13 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 1em;
 }
 
 .photo>img{
-    width: 90%;
+    width: 60vw;
     border-radius: 5%;
-    border: 2px solid gray;
+    border: 0.1em solid gray;
 }
 
 .profession{
@@ -212,4 +213,246 @@ dd{
 }
 #webpack{
     width: 30%;
+}
+
+.diagram {
+    width: 15vw;
+    height:15vw;
+    border-radius: 50%;
+    background: rgb(0, 81, 255);
+    position: relative;
+    overflow: hidden;
+}
+.diagram::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top:2vw;
+    left:2vw;
+    right:2vw;
+    bottom:2vw;
+    border-radius: 50%;
+    background: lavenderblush;
+    z-index: 3;
+    opacity: 1;
+}
+.diagram .piece {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    position: absolute;
+}
+.diagram .piece::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+.diagram .piece.left {
+    transform: rotate(0deg);
+    z-index: 2;
+    border-radius: 50%; /* only FireFox < 75.0v (fix bug)*/
+}
+.diagram.over_50 .piece.left {
+    transform: rotate(180deg);
+}
+.diagram .piece.right {
+    transform: rotate(180deg);
+    z-index: 1;
+    border-radius: 50%; /* only FireFox < 75.0v (fix bug)*/
+}
+.diagram.over_50 .piece.right {
+    transform: rotate(360deg);
+}
+.diagram .left::before {
+    background: lightgray;
+}
+.diagram.over_50 .left::before {
+    background: rgb(0, 81, 255);
+}
+.diagram .right::before {
+    background: lightgrey;
+}
+.diagram .text {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.diagram .text b {
+    font-size: 3.5vw;
+}
+.diagram .text span {
+    font-size: 4vw;
+    display: block;
+    color: rgb(0, 81, 255);
+}
+
+.round-p-bars{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+
+.round-p-bars p{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.education{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.education h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4vw;
+    color: white;
+    line-height: 2em;
+    padding-right: 2em;
+}
+
+.lenta{
+    background: rgb(0, 81, 255);
+    width: fit-content;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: -1vh;
+    margin-top: 1vh;
+     
+}
+
+.education-item:hover{
+    transform: scale(105%);
+    box-shadow: 3px 3px 4px grey;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.education-item p{
+    font-size: 1.3vw;
+}
+
+.education-item{
+    max-width: 30%;
+}
+
+.ed-name,
+.companyname{
+    color: rgb(0, 81, 255);
+    font-weight: 900;
+    text-shadow: gray 1px 1px 1px; 
+}
+
+
+.ed-name,
+.ed-spec{
+     
+     padding-left: 2%;
+}
+
+
+.ed-spec,
+.position{
+    padding-top: 1vh;
+    font-weight: 700;
+    
+}
+
+.exp-grid{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    gap: 4%;
+}
+
+.work{
+    padding: 5%;
+}
+
+.work:hover{
+    transform: scale(105%);
+    box-shadow: 3px 3px 4px grey;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.work .date{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    color: white;
+    line-height: 1.5em;
+    padding-right: 1em;  
+}
+
+.right-date{
+    background: rgb(0, 81, 255);
+    width: fit-content;
+    padding-left: 2%;
+    margin-left: auto;
+    
+}
+
+.work>p{
+    font-size: 1.3vw;
+}
+
+footer{
+    padding-bottom: 1%;
+}
+
+footer>h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4vw;
+    color: rgb(0, 81, 255);
+    line-height: 2em;
+    padding-bottom: 1em;
+    text-shadow: gray 1px 1px 1px;
+    font-weight: 900;
+}
+
+.messengers{
+    width: 50%;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+.messengers-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.messengers img{
+    margin: 0 auto;
+    display: block;
+    width: 3vw;
+}
+
+
+.messengers img:hover{
+    transform: scale(120%);
+    -webkit-filter: drop-shadow(4px 4px 1px #222);
+    filter: drop-shadow(4px 4px 1px #222);
+    transition: 0.2s ease-in-out;
+}
+
+.big{
+    transform: scale(150%);
+    position: absolute;
 }

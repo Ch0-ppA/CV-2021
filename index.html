@@ -59,13 +59,13 @@
     </header>
     <main>
       <div class="tabs wrapper">
-        <input type="radio" name="inset" value="tab_1" id="tab_1" checked />
+        <input type="radio" name="inset" value="tab_1" id="tab_1" checked onchange="tabsToggle(tabsRadio,sections)"/>
         <label for="tab_1">skills</label>
 
-        <input type="radio" name="inset" value="tab_2" id="tab_2" />
+        <input type="radio" name="inset" value="tab_2" id="tab_2" onchange="tabsToggle(tabsRadio,sections)"/>
         <label for="tab_2">education</label>
 
-        <input type="radio" name="inset" value="tab_3" id="tab_3" />
+        <input type="radio" name="inset" value="tab_3" id="tab_3" onchange="tabsToggle(tabsRadio,sections)"/>
         <label for="tab_3">experience</label>
       </div>
       <section class="tab-section wrapper" id="sect_1">
@@ -156,7 +156,7 @@
           </div>
         </div>
       </section>
-      <section class="tab-section wrapper" id="sect_2">
+      <section class="tab-section wrapper hide" id="sect_2">
         <h2>education</h2>
         <div class="education">
           <div class="scale education-item block-back">
@@ -189,7 +189,7 @@
           </div>
         </div>
       </section>
-      <section class="tab-section wrapper" id="sect_3">
+      <section class="tab-section wrapper hide" id="sect_3">
         <h2>experience</h2>
         <div class="exp-grid">
           <div class="work block-back">

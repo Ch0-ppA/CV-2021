@@ -1,5 +1,7 @@
 @import url(./reset.css);
 
+/* ! Общие для всей страницы */
+
 html{
     background: repeating-linear-gradient(
   45deg,
@@ -11,6 +13,9 @@ html{
 font-family: Arial, Helvetica, sans-serif;
 }
 
+.hide{
+    display: none;
+}
 
 .wrapper{
     min-width: 360px;
@@ -37,22 +42,20 @@ h2{
     text-shadow: gray 2px 3px 1px;
 }
 
+/* !Header */
 .top{
     display: flex;
     padding: 1%;
 }
 
-.photo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1em;
-}
 
-.photo>img{
-    width: 60vw;
+img.photo{
+    width: 30%;
+    height: auto;
     border-radius: 5%;
     border: 0.1em solid gray;
+    margin-right: 1em;
+    object-fit: cover;
 }
 
 .profession{
@@ -67,19 +70,24 @@ h2{
     font-size: 1.5vw;
 }
 
+/* *Contacts */
+
+.contacts{
+    margin-top: 2vh;
+    font-size: 1.2vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
 dt,
 dd{
     display: inline-block;
 }
-
-.contacts{
-    display: flex;
-    margin-top: 15px;
-    justify-content: space-between;
-    font-size: 1.2vw;
-}
-
-.contacts>div>dl{
+.contacts>dl>dd{
+    color: lightslategray; 
+} 
+.contacts>dl{
     display: flex;
     justify-content: space-between;
     margin-top: 0.5em;
@@ -87,14 +95,11 @@ dd{
    
 }
 
-.contacts>div>dl>dt{
-    margin-right: 3em;
+.contacts>dl>dt{
+    margin-left: 1em;
     font-style: italic;
 }
-
-.contacts>div>dl>dd{
-    color: lightslategray; 
-}
+/* !Tabs */
 
 .tabs>input{
     display: none;

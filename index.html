@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <h1 class="hide">CV</h1>
+    <header class="wrapper block-back top">
+      <img class="photo" src="./img/photo.jpg" alt="photo" width="30%" />
+      <div class="about">
+        <h2>Dmitry Chirva</h2>
+        <p class="profession">Frontend developer</p>
+        <p class="description">
+          Hello! I`m Dmitry Chirva. Extremely motivated for career change goal.
+          I have been actively studying the Web Development for 1.5 years. I
+          want to develop in this area and improve my skills.
+        </p>
+        <div class="contacts">
+          <dl>
+            <dt>Age</dt>
+            <dd>36</dd>
+          </dl>
+          <dl>
+            <dt>Address</dt>
+            <dd>629807, Noyabrsk, Russia.</dd>
+          </dl>
+          <dl>
+            <dt>Nationality</dt>
+            <dd>Russian</dd>
+          </dl>
+
+          <dl>
+            <dt>E-mail</dt>
+            <dd>
+              <a href="mailto:chirva.dmitry.1@yandex.ru"
+                >chirva.dmitry.1@yandex.ru</a
+              >
+            </dd>
+          </dl>
+          <dl>
+            <dt>Phone</dt>
+            <dd><a href="tel:+79124255780">+7(912)42-55-780</a></dd>
+          </dl>
+
+          <dl>
+            <dt>GitHub</dt>
+            <dd>
+              <a href="https://github.com/Ch0-ppA"
+                >https://github.com/Ch0-ppA</a
+              >
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="tabs wrapper">
+        <input type="radio" name="inset" value="tab_1" id="tab_1" checked onchange="tabsToggle(tabsRadio,sections)"/>
+        <label for="tab_1">skills</label>
+
+        <input type="radio" name="inset" value="tab_2" id="tab_2" onchange="tabsToggle(tabsRadio,sections)"/>
+        <label for="tab_2">education</label>
+
+        <input type="radio" name="inset" value="tab_3" id="tab_3" onchange="tabsToggle(tabsRadio,sections)"/>
+        <label for="tab_3">experience</label>
+      </div>
+      <section class="tab-section wrapper" id="sect_1">
+        <h2>skills</h2>
+        <div class="skills">
+          <div class="prof-skills block-back">
+            <div class="h3-back">
+              <h3>professional skills</h3>
+            </div>
+            <ul>
+              <li>
+                <p>HTML</p>
+                <div class="p-bar-container">
+                  <div class="p-bar" id="html">85%</div>
+                </div>
+              </li>
+              <li>
+                <p>CSS</p>
+                <div class="p-bar-container">
+                  <div class="p-bar" id="css">80%</div>
+                </div>
+              </li>
+              <li>
+                <p>JavaScript</p>
+                <div class="p-bar-container">
+                  <div class="p-bar" id="js">65%</div>
+                </div>
+              </li>
+              <li>
+                <p>React</p>
+                <div class="p-bar-container">
+                  <div class="p-bar" id="react">35%</div>
+                </div>
+              </li>
+              <li>
+                <p>Webpack</p>
+                <div class="p-bar-container">
+                  <div class="p-bar" id="webpack">30%</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="add-skills block-back">
+            <div class="h3-back">
+              <h3>additional skills</h3>
+            </div>
+            <div class="round-p-bars">
+              <div>
+                <div class="diagram progress" data-percent="68">
+                  <div class="piece left"></div>
+                  <div class="piece right"></div>
+                  <div class="text">
+                    <div>
+                      <b>68</b>
+                      <span>%</span>
+                    </div>
+                  </div>
+                </div>
+                <p>English</p>
+              </div>
+              <div>
+                <div class="diagram progress" data-percent="87">
+                  <div class="piece left"></div>
+                  <div class="piece right"></div>
+                  <div class="text">
+                    <div>
+                      <b>87</b>
+                      <span>%</span>
+                    </div>
+                  </div>
+                </div>
+                <p>Leadership</p>
+              </div>
+              <div>
+                <div class="diagram progress" data-percent="72">
+                  <div class="piece left"></div>
+                  <div class="piece right"></div>
+                  <div class="text">
+                    <div>
+                      <b>72</b>
+                      <span>%</span>
+                    </div>
+                  </div>
+                </div>
+                <p>Creativity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tab-section wrapper hide" id="sect_2">
+        <h2>education</h2>
+        <div class="education">
+          <div class="scale education-item block-back">
+            <div class="lenta">
+              <h3>2018</h3>
+            </div>
+
+            <p class="ed-name">Institute of Vocational Education, Moscow</p>
+            <p class="ed-spec">Heat engineering and heat power engineering</p>
+          </div>
+          <div class="scale education-item block-back">
+            <div class="lenta">
+              <h3>2014</h3>
+            </div>
+
+            <p class="ed-name">
+              Siberian Institute of Business and Information Technologies, Omsk
+            </p>
+            <p class="ed-spec">Informatics in economics</p>
+          </div>
+          <div class="scale education-item block-back">
+            <div class="lenta">
+              <h3>2004</h3>
+            </div>
+
+            <p class="ed-name">Noyabrsk Oil and Gas College</p>
+            <p class="ed-spec">
+              Automation of technological processes and production
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="tab-section wrapper hide" id="sect_3">
+        <h2>experience</h2>
+        <div class="exp-grid">
+          <div class="work block-back">
+            <div class="right-date">
+              <p class="date">2020 - present time</p>
+            </div>
+            <p class="companyname">Universalstroy+</p>
+            <p class="position">
+              Head of the construction and installation works
+            </p>
+          </div>
+          <div class="work block-back">
+            <div class="right-date">
+              <p class="date">2017 - 2020</p>
+            </div>
+            <p class="companyname">NOVATEC-Energy</p>
+            <p class="position">
+              Control and Instrumentation (C&I) Dept. fitter
+            </p>
+          </div>
+          <div class="work block-back">
+            <div class="right-date">
+              <p class="date">2016 - 2017</p>
+            </div>
+            <p class="companyname">Baker Hughes</p>
+            <p class="position">Drilling equipment repair technician</p>
+          </div>
+          <div class="work block-back">
+            <div class="right-date">
+              <p class="date">2010 - 2015</p>
+            </div>
+            <p class="companyname">Russian Railways</p>
+            <p class="position">Foreman</p>
+          </div>
+          <div class="work block-back">
+            <div class="right-date">
+              <p class="date">2009 - 2010</p>
+            </div>
+            <p class="companyname">Energo-Gas-Noyabrsk</p>
+            <p class="position">
+              Control and Instrumentation (C&I) Dept. fitter
+            </p>
+          </div>
+          <div class="work block-back">
+            <div class="right-date">
+              <p class="date">2007 - 2008</p>
+            </div>
+            <p class="companyname">SBK</p>
+            <p class="position">
+              Control and Instrumentation (C&I) Dept. fitter
+            </p>
+          </div>
+          <div class="work block-back">
+            <div class="right-date">
+              <p class="date">2004 - 2007</p>
+            </div>
+            <p class="companyname">Noyabrskteploneft</p>
+            <p class="position">
+              Control and Instrumentation (C&I) Dept. fitter
+            </p>
+          </div>
+          <div class="work block-back">
+            <div class="right-date">
+              <p class="date">2003 - 2003</p>
+            </div>
+            <p class="companyname">Gasautomation</p>
+            <p class="position">
+              Control and Instrumentation (C&I) Dept. fitter
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="wrapper block-back">
+      <h4>Messengers to contact me</h4>
+      <div class="messengers-center">
+        <ul class="messengers">
+          <li>
+            <a href="whatsapp://send?phone=+79124255780"
+              ><img src="./img/whatsapp.png" alt="WhatsApp" width="7%"
+            /></a>
+          </li>
+          <li>
+            <a href="viber://chat?number=79124255780"
+              ><img src="./img/viber.png" alt="Viber" width="7%"
+            /></a>
+          </li>
+          <li>
+            <a href="tg://resolve?domain=R0HQQ2"
+              ><img src="./img/telegram.png" alt="Telegram" width="7%"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
